@@ -125,10 +125,3 @@ INSERT INTO Results (EnrolmentID, FinishTime, OverallPosition, CategoryPosition,
 (1, '03:45:22', 120, 5, 'Finished'),
 (3, '00:48:15', 45, 3, 'Finished');
 
-SELECT 'Users' AS TableName, COUNT(*) AS RowCount FROM Users
-UNION SELECT 'Venues', COUNT(*) FROM Venues
-UNION SELECT 'Events', COUNT(*) FROM Events
-UNION SELECT 'Categories', COUNT(*) FROM Categories
-UNION SELECT 'Enrolments', COUNT(*) FROM Enrolments
-UNION SELECT 'Results', COUNT(*) FROM Results;
-GO
