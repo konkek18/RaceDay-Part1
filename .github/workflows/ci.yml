@@ -1,0 +1,34 @@
+name: CI - Validate Part 1 Docs
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check /docs folder exists
+        run: |
+          if [ ! -d "./docs" ]; then echo "docs folder missing"; exit 1; fi
+          echo "docs folder found"
+
+      - name: Check ERD file exists
+        run: |
+          if [ ! -f "./docs/ERD.png" ] && [ ! -f "./docs/ERD.pdf" ]; then echo "ERD missing"; exit 1; fi
+          echo "ERD found"
+
+      - name: Check endpoint plan exists
+        run: |
+          if [ ! -f "./docs/endpoint-plan.md" ]; then echo "endpoint plan missing"; exit 1; fi
+          echo "endpoint plan found"
+
+      - name: Check SQL script exists
+        run: |
+          if [ ! -f "./docs/RaceDay_Schema.sql" ]; then echo "SQL script missing"; exit 1; fi
+          echo "SQL script found"
