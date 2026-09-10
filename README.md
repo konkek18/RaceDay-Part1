@@ -66,5 +66,8 @@ Part 3 will build the MVC interface so Organisers and Participants can interact 
 ## Why a Single Users Table
 Instead of separate Organiser and Participant tables, the schema uses one Users table with a Role column. This decision was made for three reasons: it simplifies login (one authentication endpoint), it avoids duplicated profile fields, and it makes role-based access a simple check on one column rather than a join across two tables.   
 
+## Data Integrity Rules
+The schema enforces data integrity at the database level: Email must be unique, BibNumber must be unique when assigned, Capacity must be greater than zero, DistanceKm and EntryFee must be non-negative, and every Status column has a CHECK constraint limiting it to a defined set of values. This prevents bad data from ever reaching the application layer.
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
