@@ -78,6 +78,9 @@ A Participant named Siya Mthembu logs in, browses events, and sees the Durban Ci
 ## Why Venues Is a Separate Table
 Venues are stored separately from Events because the same venue can host multiple events over time (for example, FNB Stadium could host several runs in one year). Keeping venue data in its own table avoids repeating address and capacity information and allows venue-level reporting in future versions of the system.
 
+## One-to-One Result Relationship
+Each Enrolment has at most one Result, which is why the ResultID column in the Results table references EnrolmentID with a UNIQUE constraint. This prevents duplicate results for the same race entry and mirrors how official race timing works: one runner, one bib, one final time.
+
 
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
