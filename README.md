@@ -43,5 +43,10 @@ The API follows RESTful conventions with consistent naming:
 - Foreign keys enforce referential integrity across all relationships.
 - Seed data includes 2 Organisers, 2 Participants, 3 Events, 8 Categories, 3 Enrolments and 2 Results.
 
+  ## Role-Based Access Summary
+Organisers can register, log in, browse events, and also create, edit and delete their own events. They manage the categories inside those events and capture participant results. They can view all enrolments on their events.
+
+Participants can register, log in, and browse events. They can enrol in an event by selecting a category, view only their own enrolments, and view their own results. They cannot create or edit events, and they cannot see other participants' enrolments.
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
