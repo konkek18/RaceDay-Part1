@@ -63,5 +63,8 @@ Part 3 will build the MVC interface so Organisers and Participants can interact 
 4. The Messages tab should display "Command(s) completed successfully" with no errors.
 5. Run `SELECT * FROM Users;` and `SELECT * FROM Events;` to confirm the seeded data is present.
 
+## Why a Single Users Table
+Instead of separate Organiser and Participant tables, the schema uses one Users table with a Role column. This decision was made for three reasons: it simplifies login (one authentication endpoint), it avoids duplicated profile fields, and it makes role-based access a simple check on one column rather than a join across two tables.   
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
