@@ -35,5 +35,13 @@ The API follows RESTful conventions with consistent naming:
 - HTTP methods indicate the action (GET reads, POST creates, PUT updates, DELETE removes)
 - Role enforcement happens at the controller level, not just the UI
 
+  ## SQL Script Highlights
+- Uses IDENTITY(1,1) for all primary keys.
+- CHECK constraints enforce valid Role, Status, Capacity, Distance and EntryFee values.
+- UNIQUE constraints on Email and BibNumber prevent duplicates.
+- DEFAULT GETDATE() automatically timestamps registrations and enrolments.
+- Foreign keys enforce referential integrity across all relationships.
+- Seed data includes 2 Organisers, 2 Participants, 3 Events, 8 Categories, 3 Enrolments and 2 Results.
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
