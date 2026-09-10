@@ -90,6 +90,9 @@ The endpoint plan lists 18 endpoints, covering authentication, user profile, eve
 ## Tools Used
 The ERD was created using the Mermaid Live Editor and exported as PNG. The SQL script was written for SQL Server and tested in SQL Server Management Studio. The repository is hosted on GitHub with a GitHub Actions workflow for continuous validation of the docs folder.
 
+## Author's Note
+This project was completed as part of the Programming Part 1 Portfolio of Evidence for 2026. All planning documents, the ERD, the API endpoint plan and the SQL script were designed before any application code was written, in line with the brief.
+
 
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
