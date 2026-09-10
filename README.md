@@ -84,6 +84,9 @@ Each Enrolment has at most one Result, which is why the ResultID column in the R
 ## Commit History Approach
 This repository was built in stages: the initial commit uploaded the finished files, the second commit added the CI/CD workflow, and subsequent commits layered in documentation directly on GitHub. Each commit represents a specific decision or explanation, not a random text change.
 
+## Endpoint Count Justification
+The endpoint plan lists 18 endpoints, covering authentication, user profile, events, categories, enrolments, results and venues. Each endpoint was chosen because it maps directly to a function that either an Organiser or a Participant needs to perform, as described in the RaceDay brief.
+
 
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
