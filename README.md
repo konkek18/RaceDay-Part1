@@ -28,5 +28,12 @@ The ERD uses a single Users table with a Role column to distinguish Organisers f
 - Categories → Enrolments: One Category can have many Enrolments (1:M).
 - Enrolments → Results: One Enrolment produces exactly one Result (1:1).
 
+  ## API Design Principles
+The API follows RESTful conventions with consistent naming:
+- All routes start with /api/
+- Nouns are plural (events, categories, enrolments)
+- HTTP methods indicate the action (GET reads, POST creates, PUT updates, DELETE removes)
+- Role enforcement happens at the controller level, not just the UI
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
