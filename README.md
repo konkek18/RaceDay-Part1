@@ -51,7 +51,10 @@ Participants can register, log in, and browse events. They can enrol in an event
 ## CI/CD Pipeline
 The GitHub Actions workflow lives in `.github/workflows/ci.yml`. On every push to main or master, it checks that the `/docs` folder exists and that it contains the ERD image, the endpoint plan, and the SQL script. If any of these files are missing, the build fails and turns red. When all files are present, the build passes with a green checkmark.
 
+## Future Enhancements (Parts 2 and 3)
+Part 2 will implement the API endpoints listed in the endpoint plan, with JWT authentication and role-based access enforced at the controller level.
 
+Part 3 will build the MVC interface so Organisers and Participants can interact with the system through the browser, with the API remaining the single source of truth.
 
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
