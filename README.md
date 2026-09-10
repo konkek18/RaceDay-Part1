@@ -72,6 +72,9 @@ The schema enforces data integrity at the database level: Email must be unique, 
 ## Naming Conventions
 All tables use PascalCase singular names (Users, Events, Categories). All primary keys follow the TableNameID pattern (UserID, EventID). All foreign keys use the same name as the referenced primary key. This makes joins intuitive and reduces the chance of ambiguous column names in queries.
 
+## Sample Event Walkthrough
+A Participant named Siya Mthembu logs in, browses events, and sees the Durban City Marathon. He opens it, sees three categories, and enrols in the Full Marathon 42.2km Senior category. His enrolment is confirmed and he is assigned bib number A1234. After the race, the Organiser captures his finishing time of 03:45:22 and his positions. Siya then logs in and views his personal result.
+
 
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
