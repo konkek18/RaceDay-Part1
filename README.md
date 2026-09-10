@@ -48,5 +48,10 @@ Organisers can register, log in, browse events, and also create, edit and delete
 
 Participants can register, log in, and browse events. They can enrol in an event by selecting a category, view only their own enrolments, and view their own results. They cannot create or edit events, and they cannot see other participants' enrolments.
 
+## CI/CD Pipeline
+The GitHub Actions workflow lives in `.github/workflows/ci.yml`. On every push to main or master, it checks that the `/docs` folder exists and that it contains the ERD image, the endpoint plan, and the SQL script. If any of these files are missing, the build fails and turns red. When all files are present, the build passes with a green checkmark.
+
+
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
