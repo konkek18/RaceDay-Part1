@@ -87,6 +87,9 @@ This repository was built in stages: the initial commit uploaded the finished fi
 ## Endpoint Count Justification
 The endpoint plan lists 18 endpoints, covering authentication, user profile, events, categories, enrolments, results and venues. Each endpoint was chosen because it maps directly to a function that either an Organiser or a Participant needs to perform, as described in the RaceDay brief.
 
+## Tools Used
+The ERD was created using the Mermaid Live Editor and exported as PNG. The SQL script was written for SQL Server and tested in SQL Server Management Studio. The repository is hosted on GitHub with a GitHub Actions workflow for continuous validation of the docs folder.
+
 
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
