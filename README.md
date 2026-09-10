@@ -81,6 +81,9 @@ Venues are stored separately from Events because the same venue can host multipl
 ## One-to-One Result Relationship
 Each Enrolment has at most one Result, which is why the ResultID column in the Results table references EnrolmentID with a UNIQUE constraint. This prevents duplicate results for the same race entry and mirrors how official race timing works: one runner, one bib, one final time.
 
+## Commit History Approach
+This repository was built in stages: the initial commit uploaded the finished files, the second commit added the CI/CD workflow, and subsequent commits layered in documentation directly on GitHub. Each commit represents a specific decision or explanation, not a random text change.
+
 
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
