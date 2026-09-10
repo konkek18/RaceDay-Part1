@@ -97,4 +97,4 @@ This project was completed as part of the Programming Part 1 Portfolio of Eviden
 
 
 ## YouTube Walkthrough
-[Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
+[Watch the Part 1 walkthrough](https://youtu.be/LgIaUIRCHEg)
