@@ -56,5 +56,12 @@ Part 2 will implement the API endpoints listed in the endpoint plan, with JWT au
 
 Part 3 will build the MVC interface so Organisers and Participants can interact with the system through the browser, with the API remaining the single source of truth.
 
+## Testing the SQL Script
+1. Open SQL Server Management Studio and connect to your local instance.
+2. Open the file `docs/RaceDay_Schema.sql`.
+3. Press F5 to execute the entire script.
+4. The Messages tab should display "Command(s) completed successfully" with no errors.
+5. Run `SELECT * FROM Users;` and `SELECT * FROM Events;` to confirm the seeded data is present.
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
