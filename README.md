@@ -69,5 +69,9 @@ Instead of separate Organiser and Participant tables, the schema uses one Users 
 ## Data Integrity Rules
 The schema enforces data integrity at the database level: Email must be unique, BibNumber must be unique when assigned, Capacity must be greater than zero, DistanceKm and EntryFee must be non-negative, and every Status column has a CHECK constraint limiting it to a defined set of values. This prevents bad data from ever reaching the application layer.
 
+## Naming Conventions
+All tables use PascalCase singular names (Users, Events, Categories). All primary keys follow the TableNameID pattern (UserID, EventID). All foreign keys use the same name as the referenced primary key. This makes joins intuitive and reduces the chance of ambiguous column names in queries.
+
+
 ## YouTube Walkthrough
 [Watch the Part 1 walkthrough](PASTE_YOUR_YOUTUBE_LINK_HERE)
